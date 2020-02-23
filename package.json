@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-eventually",
+  "name": "burnwatt.io",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Eventually by HTML5 UP",
+  "description": "personal portfolio site",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-eventually.git"
+    "url": "git+https://github.com/burnwatt/portfolio.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Josh Burnwatt",
+    "email": "josh@burnwatt.io"
   },
   "dependencies": {
     "gatsby": "^2.4.3",
@@ -36,13 +36,11 @@
     "rimraf": "^2.6.3"
   },
   "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-eventually"
+    "burnwatt",
+    "portfolio"
   ],
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-eventually/issues"
+    "url": "https://github.com/burnwatt/portfolio/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-eventually#readme"
+  "homepage": "https://github.com/burnwatt/portfolio#readme"
 }

@@ -1,37 +1,37 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Eventually', // <title>
-  manifestName: 'Eventually',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Burnwatt.io', // <title>
+  manifestName: 'Burnwatt.io',
+  manifestShortName: 'Portfolio', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-eventually/`, // This path is subpath of your hosting https://domain/portfolio
+  manifestIcon: 'src/assets/img/brain-solid.svg',
+  pathPrefix: `/burnwatt/`, // This path is subpath of your hosting https://domain/portfolio
   // social
-  heading: 'Eventually',
+  heading: 'Burnwatt.io',
   subHeading:
-    "A simple template for telling the world when you'll launch your next big thing.",
+    "Personal portfolio/blog for a n00b engineer.",
   socialLinks: [
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/burnwatt',
+    },
+    {
+      icon: 'fa-linkedin',
+      name: 'Linkedin',
+      url: 'https://linkedin.com/burnwatt',
     },
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://twitter.com/burnwatt',
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:josh@burnwatt.io',
     },
   ],
 };
