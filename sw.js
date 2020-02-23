@@ -26,28 +26,24 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-75ea5e8ff51fe2a1d7cf.js"
+    "url": "webpack-runtime-6c61bae3d2cdbf2ed1dd.js"
   },
   {
     "url": "commons-b526734b8af9192827bf.js"
   },
   {
-    "url": "app-01e913d22ef1ff0c1f9f.js"
+    "url": "app-7c80a93d1a3f45309d7d.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-ec1da19b77b8d79a622f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "4e64ab22dfa78332bf0f80205a6e6376"
-  },
-  {
-    "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "c355c8040c47a63bfb3360e4b7cb6553"
+    "revision": "f325300c792040645dfdd1d41fbf5e60"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "62f0cfa27a9d58068d6f85c1dc5e3f64"
+    "revision": "b39a1347cdaa280694b9a818d4450d74"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
@@ -66,12 +62,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/burnwatt`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/burnwatt/app-01e913d22ef1ff0c1f9f.js`))) {
+  if (!resources || !(await caches.match(`/app-7c80a93d1a3f45309d7d.js`))) {
     return await fetch(event.request)
   }
 
@@ -84,7 +80,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/burnwatt/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
