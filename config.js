@@ -7,6 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/brain-solid.svg',
+  pathPrefix: `/burnwatt.io/`, // This path is subpath of your hosting https://domain/portfolio
   // social
   heading: 'Burnwatt.io',
   subHeading:
