@@ -21,7 +21,7 @@ module.exports = {
     {
       icon: 'fa-linkedin',
       name: 'Linkedin',
-      url: 'https://linkedin.com/burnwatt',
+      url: 'https://www.linkedin.com/in/burnwatt/',
     },
     {
       icon: 'fa-twitter',
