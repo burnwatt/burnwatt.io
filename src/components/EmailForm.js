@@ -10,7 +10,7 @@ export class EmailForm extends Component {
   onSubmit(e) {
     e.preventDefault();
     e.stopPropagation();
-    this.setState({ message: 'Thank you! Now check out my portfolio.' });
+    this.setState({ message: 'Just kidding! I am not going to email you.' });
     setTimeout(() => {
       this.setState({ message: '' });
     }, 3000);
